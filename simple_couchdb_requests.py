@@ -1,4 +1,4 @@
-# pip install cloudant
+# pip install cloudant or on my RPi sudo pip3 install cloudant  
 
 # from cloudant.client import Cloudant
 from cloudant.client import CouchDB 
@@ -38,7 +38,7 @@ def couchdb_post(db_name, data, verify):
  
 
 # Lets test it
-#couchdb_connect('admin', 'password', 'http://localhost:5984')
-#couchdb_post('customers', {'name': '1','email': '1@1.com'}, True)
-#couchdb_post('customers', {'name': '2','email': '2@2.com'}, True)
-#couchdb_connect('admin', 'password', 'http://localhost:5984') # should say: DB conection already established
+# x = {"sensorHumanId": "Leon", "sensorUuid": "123456778890", "temperatureValue": "-22", "recordedDate": "2019-09-30 13:21"}
+#couchdb_connect('admin', 'password', 'http://192.168.1.109:5984')
+#couchdb_post('temperature', {"sensorHumanId": "Leon", "sensorUuid": "123456778890", "temperatureValue": "1", "recordedDate": "2019-09-30 13:21"}, True)
+# should say: DB conection already established
